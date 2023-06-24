@@ -8,6 +8,19 @@
 
 }
 
+:root{
+  --azul-escuro-- : #027DC5; 
+  --azul--        : #C6D7FF; 
+  --azul-medio--  : #A0C3E2;
+  --azul-claro--  : #D7E0EB;
+  --bege-claro--  : #f8f8f6;
+  --cinza-claro: #F7F4F4;
+  --cinza: #464646;
+}
+
+
+
+
 :root {
   --preto: #464646;
   --azul-claro: #EAF2FD;

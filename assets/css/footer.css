@@ -1,0 +1,14 @@
+footer{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.footer-copy p{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap:5px;
+}
+

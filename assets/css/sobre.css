@@ -1,0 +1,57 @@
+/*------Sobre-----*/
+
+
+.sobre{
+   display: flex;
+   width: 100%;
+   flex-direction: row-reverse;
+   background-color: #F7F4F4;     
+   height:700px; 
+   align-items: center;
+   gap:80px;
+   padding: 10%;
+}
+
+.img-sobre img{
+   width: 368px;
+   height: 368px;
+   flex-shrink: 0;
+   border-radius: 50%; 
+}
+ 
+ .sobre-text p{
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 8px;
+    line-height: 29px;   
+ }
+
+ @media (max-width:768px) {
+   
+.sobre{
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: auto;
+   gap: 10px;
+}
+
+.sobre h1{
+   font-size: 22px;
+   font-weight: 700;
+ }
+
+ .sobre-text p{
+   font-size: 14px;
+   margin-top: 10px;
+   padding: 8px;
+   line-height: 29px;   
+}
+
+.img-sobre img{
+   width: 200px;
+   height: 200px;
+ }
+}

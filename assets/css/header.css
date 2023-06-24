@@ -1,0 +1,168 @@
+
+/*---Menu ---*/
+header{
+  display: flex;
+  width: 100%;
+  background: var( --cinza-claro--);
+ 
+}
+html{
+  background: var( --cinza);
+}
+
+main{
+  background: var( --cinza);
+}
+
+.menu.container{
+ display: flex; 
+ align-items: center;
+ width: 1250px;
+ height: 98px;
+justify-content: space-between;
+margin-left: 82px;
+
+}
+
+.logo{
+  display: flex;
+  justify-content: baseline;
+}
+
+.logo h2{
+  margin-left: 10px; 
+  font-size:25px; 
+  color: var( --azul-escuro--);
+
+}
+.menu img{
+width: 25px;
+ height: 25px;
+}
+
+
+.nav-menu{
+display: flex;
+justify-content: center;
+align-items: center;  
+}
+
+
+.nav-menu ul{
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  align-items: center;   
+
+}
+.nav-menu a {
+  padding: 8px;
+  color: var(--preto);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.hamburguer {
+  display: none;
+  color: var(--azul-escuro--);
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  border-radius: 2px;
+  margin: 5px auto;
+  background-color:  var(--azul-escuro--);
+  transition: all 0.3s ease-in-out;
+}
+
+/*----Media Queries ----*/
+
+@media (max-width:768px) {
+  .container {
+    padding: 1%;
+  }
+
+  .menu.container {
+    margin-left: 10px;
+    padding: 5px;
+  }
+
+  .menu.container h2 {
+    display: flex;
+    align-items: flex-start;
+    font-size: 18px;
+  }
+
+  .menu img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .bar {
+    width: 22px;
+    height: 1px;
+  }
+
+  .hamburguer {
+    display: inline;
+    margin-right: 28px;
+    color: var(--preto);
+  }
+
+  .hamburguer.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburguer.active .bar:nth-child(1) {
+    transform: translate(0px) rotate(42deg);
+    margin: -6px;
+  }
+
+  .hamburguer.active .bar:nth-child(3) {
+    transform: translate(0px) rotate(-45deg);
+    margin: -7px;
+  }
+
+  .nav-menu ul {
+    position: absolute;
+    left: -1%;
+    right: -1%;
+    top: 90px;
+    gap: 0;
+    border-radius: 0 0 5px 5px;
+    background-color: var(--azul-claro--);
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    flex-direction: column;
+    transition: 0.3s;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+    margin-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px solid var(--cinza-medio);
+
+  }
+
+  .nav-link.active {
+    left: -380px;
+  }
+
+  .nav-link:hover {
+    background-color: #053742;
+    color: #f88f06;
+    border-radius: 3px;
+    padding: 2px;
+
+  }
+
+}
