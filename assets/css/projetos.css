@@ -140,13 +140,18 @@ section .project{
 /*----Media Queries ----*/
 
 @media (max-width:768px) {
-  
+ 
+.project-inicial{
+width: 100%;
+padding: 0;
 
+}
   .project-container-box{
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-   margin: auto;
+    margin-left: 10px;
+ 
   }
 
   .project-box{

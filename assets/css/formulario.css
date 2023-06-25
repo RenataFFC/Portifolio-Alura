@@ -6,8 +6,8 @@ section.form-contato{
  width: 100%;
  background: var(--azul-claro);
  margin-top: 50px;
-
 }
+
 .contato-title{
   display: flex;
   justify-content: center;
@@ -34,8 +34,7 @@ section.form-contato{
 }
 .form-input{
   display: flex;
-  flex-direction: column;
- 
+  flex-direction: column; 
 }
 
 .box-social{
@@ -81,4 +80,41 @@ textarea{
   gap: 25px;
   margin-bottom: 5px;
   border: none; 
+}
+
+/*----Media Queries ----*/
+
+@media (max-width:768px) {
+
+.form-contato{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  padding: 10px;
+}
+
+  .box-contato{
+    width: 100%;
+    height: 800px;
+   display: flex;
+  flex-direction: column;
+   margin-left: 0px;
+   margin-bottom: 150px; 
+  }
+
+  
+.box-social{
+   width: 100%;
+}
+
+  .form-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+  }
+
+
+
 }

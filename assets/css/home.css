@@ -83,6 +83,11 @@ span {
     align-items: flex-start;
     margin-bottom: 80px;    
     margin-top: 0;
+    margin-left: 0px;
+  }
+
+  .home span{
+    font-size: 22px;
   }
 
   .home-text{
@@ -101,11 +106,22 @@ span {
    font-weight: 400;
    line-height: 25px;
    margin-top:20px;
-   padding: 10px;
+   padding: 6px;
+   text-align: justify;
+
  }
   
  .img-home img{  
     display: none;
+ }
+
+ .links-social{
+   padding: 0px;
+
+ }
+
+ .social-media a {
+  font-size: 1rem;
  }
 
 }
