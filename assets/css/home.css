@@ -12,7 +12,8 @@ section .home{
    width: 1200px;
    height: 368px;
    margin-top:100px;
-    margin-left: 20px;     
+    margin-left: 20px;    
+ 
  } 
   
  .home-text h1{
@@ -34,6 +35,7 @@ section .home{
    width: 328px;
    height: 328px;
    border-radius: 50%;
+   
 }
 
 span {
@@ -113,6 +115,7 @@ span {
   
  .img-home img{  
     display: none;
+    
  }
 
  .links-social{
